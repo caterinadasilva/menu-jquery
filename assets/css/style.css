@@ -31,7 +31,7 @@ display: block;
 body {
 line-height: 1;
 font-family: 'Raleway', Helvetica, Arial, sans-serif;
-background-color: #f9f9f9;
+background-color: #6730EC;
 }
 ol, ul {
 list-style: none;
@@ -52,7 +52,7 @@ border-spacing: 0;
 /* ESTILOS BÁSICOS */
 .container {
 display: block;
-width: 100%;
+width: 95%;
 max-width: 960px;
 margin: 0 auto;
 }
@@ -152,6 +152,7 @@ width: 100%;
 margin: 5em 0 0;
 padding: 0 0 2em;
 overflow: hidden;
+color: #fff;
 }
 /*INPUT CHECK*/
 input[type|=check] {
@@ -171,3 +172,43 @@ margin: 0;
 }
 
 /* Especial */
+.menu {
+	background-color: #fff;
+	width: 10em;
+	overflow: hidden;
+	height: 0;
+	transition: .5s ease all;
+}
+.menu li {
+	list-style: none;
+	padding: .5em 1em;
+}
+.menu a {
+	text-decoration: none;
+	color: #333;
+}
+.menu a:hover {
+	color: #f20256;
+}
+.open-hide {
+	background-color: #fff;
+	width: 35px;
+	height: 35px;
+	display: block;
+	background-image: url("../img/");
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: 25px;
+	background-size: 25px;
+	text-indent: -9999em;
+}
+.open-hide:hover {
+	cursor: pointer;
+}
+.show {
+	background-image: url("../img/");
+	background-size: 15px;
+}
+.show + .menu {
+	height: 100px;
+}
